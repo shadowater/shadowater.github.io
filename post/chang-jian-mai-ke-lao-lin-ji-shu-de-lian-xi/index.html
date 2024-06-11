@@ -1,0 +1,329 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>常见麦克劳林级数的联系 | Gridea</title>
+<link rel="shortcut icon" href="https://shadowater.github.io/favicon.ico?v=1718121731755">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://shadowater.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="常见麦克劳林级数的联系 | Gridea - Atom Feed" href="https://shadowater.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="对于初学高等数学 or 考研同学来说，麦克劳林级数（或者称之为”泰勒展开“，后文姑且按照一般读者的习惯成为泰勒展开）的记忆可能是一件有些困扰的事情，如果分立的去看这些公式的话。但实际上，可以把常见的级数分为三组，组内的级数互相有一些关系，如..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://shadowater.github.io">
+  <img class="avatar" src="https://shadowater.github.io/images/avatar.png?v=1718121731755" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    人生天地间，忽如远行客
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              常见麦克劳林级数的联系
+            </h2>
+            <div class="post-info">
+              <span>
+                2024-04-23
+              </span>
+              <span>
+                14 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>对于初学高等数学 or 考研同学来说，麦克劳林级数（或者称之为”泰勒展开“，后文姑且按照一般读者的习惯成为泰勒展开）的记忆可能是一件有些困扰的事情，如果分立的去看这些公式的话。但实际上，可以把常见的级数分为三组，组内的级数互相有一些关系，如此便可极大得减少记忆量，下面我们便开始分别讨论。</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
+(1)\\
+\frac{1}…'>\begin{align}
+(1)\\
+\frac{1}{1-x} &amp; =1+x+x^2+x^{3}+x^{4}+\cdots+x^n+\cdots&amp;-1&lt;&amp;x&lt;1\tag{1}\\
+
+\frac{1}{1+x} &amp; =1-x+x^{2}-x^{3}+x^{4}-\cdots+(-1)^{n}x^{n}+\cdots&amp;-1&lt;&amp;x&lt;1\tag{2}\\
+
+\ln{\frac{1}{1-x}} &amp; =1+x+\frac{x^2}{2}+\frac{x^3}{3}+\frac{x^4}{4}+\cdots+\frac{x^n}{n}+\cdots&amp;-1&lt;&amp;x&lt;1\tag{3}\\
+
+\ln{\frac{1}{1+x}} &amp; =1-x+\frac{x^2}{2}-\frac{x^3}{3}+\frac{x^4}{4}-\cdots+\frac{x^n}{n}+\cdots&amp;-1&lt;&amp;x&lt;1\tag{4}\\\\
+
+(2)\\
+e^x &amp; =1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{x^4}{4!}+\cdot\cdot\cdot+\frac{x^n}{n!}+\cdots&amp;-\infty&lt;&amp;x&lt;\infty \tag{5}\\
+
+\sin x&amp;=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+\frac{x^9}{9!}-\cdot\cdot\cdot+\frac{(-1)^nx^{2n+1}}{(2n+1)!}+\cdots&amp;-\infty&lt;&amp;x&lt;\infty \tag{6}\\
+
+\cos x&amp;=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+\frac{x^8}{8!}-\cdot\cdot\cdot+\frac{(-1)^nx^{2n}}{(2n)!}+\cdots&amp;-\infty&lt;&amp;x&lt;\infty \tag{7}\\\\
+
+(3)\\
+(1+x)^k&amp;=1+kx+\frac{k(k-1)x^2}{2!}+\frac{k(k-1)(k-2)x^3}{3!}+\cdots&amp;-1&lt;&amp;x&lt;1^* \tag{8}\\
+
+
+\end{align}
+</p>
+<h2 id="第一组">第一组</h2>
+<p>首先回忆高中所学的等比数列求和公式，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mo>=</mo><mfrac><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>(</mo><mn>1</mn><mo>−</mo><msup><mi>q</mi><mi>n</mi></msup><mo>)</mo></mrow><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow></mfrac><mspace width="1em"/><mo>(</mo><mi>q</mi><mi mathvariant="normal">≠</mi><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">S=\frac{a_1(1-q^n)}{1-q}\quad(q\neq1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.491108em;vertical-align:-0.481108em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight" style="margin-right:0.03588em;">q</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mbin mtight">−</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">q</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7385428571428572em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.481108em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:1em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span>，详细的推导可以参考<a href="https://wuli.wiki/online/HsGmPg.html">这里</a>。</p>
+<p><span class='katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲\frac{1}{1-x}  …'>\begin{align}\frac{1}{1-x}  &amp;=1+x+x^2+x^{3}+x^{4}+\cdots+x^n+\cdots&amp;-1&lt;x&lt;1\tag{1} \end{align}</span></p>
+<p>注意到，式 1 右侧是一个等差数列，根据求和公式，很容易得出，前 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 项和为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>∗</mo><mo>(</mo><mn>1</mn><mo>−</mo><msup><mi>x</mi><mi>n</mi></msup><mo>)</mo></mrow><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">S=\frac{1*(1-x^n)}{1-x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.413331em;vertical-align:-0.403331em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight">x</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mbin mtight">∗</span><span class="mopen mtight">(</span><span class="mord mtight">1</span><span class="mbin mtight">−</span><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7385428571428572em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.403331em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>，当 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">n\to\infty</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord">∞</span></span></span></span>，若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∣</mi><mi>x</mi><mi mathvariant="normal">∣</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\vert x \vert &lt; 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathdefault">x</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，则 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mi>n</mi></msup><mo>→</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">1-x^n \to 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>，进而 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi><mo>→</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">S \to \frac{1}{1-x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.2484389999999999em;vertical-align:-0.403331em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mbin mtight">−</span><span class="mord mathdefault mtight">x</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.403331em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>，正是等号左侧的内容。Interesting，高中和大学知识串起来了。</p>
+<p>下面我们可以着手于式 2 了</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲\frac{1}{1+x} &amp;…'>\begin{align}\frac{1}{1+x} &amp; =1-x+x^{2}-x^{3}+x^{4}-\cdots+(-1)^{n}x^{n}+\cdots&amp;-1&lt;x&lt;1\tag{2} \end{align}
+</p>
+<p>右侧显然也是一个等差数列，自然可以做类似的推导，但这里并不打算这样做，让我们换一种方式。我们将式<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>中的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 替换为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">-x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord mathdefault">x</span></span></span></span>，</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲\frac{1}{1-(-x)…'>\begin{align}\frac{1}{1-(-x)} &amp;  =1+(-x)+(-x)^2+(-x)^{3}+(-x)^{4}+\cdots+(-x)^n+\cdots&amp;-1&lt;(-x)&lt;1 \tag{9}\end{align}
+</p>
+<p>稍作化简即可得到</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲\frac{1}{1+x} &amp;…'>\begin{align}\frac{1}{1+x} &amp; =1-x+x^{2}-x^{3}+x^{4}-\cdots+(-1)^{n}x^{n}+\cdots&amp;-1&lt;x&lt;1\tag{2} \end{align}
+</p>
+<p>接着是式 3</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲\ln{\frac{1}{1-…'>\begin{align}\ln{\frac{1}{1-x}} &amp; =1+x+\frac{x^2}{2}+\frac{x^3}{3}+\frac{x^4}{4}+\cdots+\frac{x^n}{n}+\cdots&amp;-1&lt;x&lt;1\tag{3}\end{align}
+</p>
+<p>让我们回到式 1</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲\frac{1}{1-x}  …'>\begin{align}\frac{1}{1-x}  &amp;=1+x+x^2+x^{3}+x^{4}+\cdots+x^n+\cdots&amp;-1&lt;x&lt;1\tag{1} \end{align}
+</p>
+<p>两边同时取 0 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mo mathvariant="normal">′</mo></msup></mrow><annotation encoding="application/x-tex">x^\prime</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.751892em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span> 的变上限积分</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲\int_0^{x^\prim…'>\begin{align}\int_0^{x^\prime}\frac{1}{1-x} &amp; =\int_0^{x^\prime} 1+x+x^2+x^{3}+x^{4}+\cdots+x^n+\cdots&amp;-1&lt;x&lt;1\tag{10}\\
+
+\ln{\frac{1}{1-x}} |_{x=0}^{x={x^\prime}} &amp; =1+x+\frac{x^2}{2}+\frac{x^3}{3}+\frac{x^4}{4}+\cdots+\frac{x^n}{n}+\cdots |_{x=0}^{x={x^\prime}} &amp;-1&lt;x&lt;1\tag{11}\\
+
+\ln{\frac{1}{1-{x^\prime}}} &amp; =1+{x^\prime}+\frac{{x^\prime}^2}{2}+\frac{{x^\prime}^3}{3}+\frac{{x^\prime}^4}{4}+\cdots+\frac{{x^\prime}^n}{n}+\cdots&amp;-1&lt;{x^\prime}&lt;1\tag{12}\end{align}
+</p>
+<p>将 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mo mathvariant="normal">′</mo></msup></mrow><annotation encoding="application/x-tex">x^\prime</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.751892em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span> 替换为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span>，即可得到式 3。</p>
+<p>式 2 推导出 式 4 的过程类似，不再赘述。</p>
+<p>备注：</p>
+<blockquote>
+<p>我们在这里对”级数“的操作（变量替换和积分），很像是对”数列“的操作，或者说，对”多项式“。事实上，在收敛半径内，级数的表现和多项式完全一致，我们对多项式可以进行的操作，完全可以套在级数上。</p>
+</blockquote>
+<h2 id="第二组">第二组</h2>
+<p>由于在这里根据定义求 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">e^x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span></span></span></span></span></span></span></span> 泰勒展开还为时过早，这里我们先采用一种后验的方法。假设 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">e^x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span></span></span></span></span></span></span></span> 的展开为式 5，</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲e^x &amp; =1+x+\fra…'>\begin{align}e^x &amp; =1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{x^4}{4!}+\cdot\cdot\cdot+\frac{x^n}{n!}+\cdots&amp;-\infty&lt;&amp;x&lt;\infty \tag{5}\end{align}
+</p>
+<p>两边求导</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲\frac{\mathrm{d…'>\begin{align}\frac{\mathrm{d}}{\mathrm{d}x} e^x &amp; =\frac{\mathrm{d}}{\mathrm{d}x}(1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{x^4}{4!}+\cdot\cdot\cdot+\frac{x^n}{n!}+\cdots)&amp;-\infty&lt;&amp;x&lt;\infty \tag{13}\end{align}
+</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">e^x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span></span></span></span></span></span></span></span> 求导还是自身，右侧则是多项式求导，容易得出</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲ e^x &amp; =0+1+x+\…'>\begin{align} e^x &amp; =0+1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{x^4}{4!}+\cdot\cdot\cdot+\frac{x^n}{n!}+\cdots&amp;-\infty&lt;&amp;x&lt;\infty \tag{14}\end{align}
+</p>
+<p>这正是式 5，除了多了一个无关紧要的 0。</p>
+<p>为了将式 5 与 式 6 和式 7 联系起来，让我们姑且引入一个新公式，欧拉公式</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mtable side="right"><mlabeledtr><mtd><mtext>(18)</mtext></mtd><mtd><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>x</mi></mrow></msup><mo>=</mo><mi>cos</mi><mo>⁡</mo><mi>x</mi><mo>+</mo><mi>i</mi><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow></mtd></mlabeledtr></mtable><annotation encoding="application/x-tex">e^{ix} =\cos x+i\sin x \tag{18}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8746639999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8746639999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight">x</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66786em;vertical-align:0em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span></span><span class="tag"><span class="strut" style="height:1.1246639999999999em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">(</span><span class="mord"><span class="mord">1</span><span class="mord">8</span></span><span class="mord">)</span></span></span></span></span></span></p>
+<p>其中 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mo>=</mo><msqrt><mrow><mo>−</mo><mn>1</mn></mrow></msqrt></mrow><annotation encoding="application/x-tex">i = \sqrt{-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.04em;vertical-align:-0.17444499999999996em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8655550000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord">−</span><span class="mord">1</span></span></span><span style="top:-2.825555em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
+-10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
+-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
+35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
+-221c5.3,-9.3,12,-14,20,-14H400000v40H845.2724s-225.272,467,-225.272,467
+s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
+s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.17444499999999996em;"><span></span></span></span></span></span></span></span></span> ，为虚数单位。</p>
+<p>将 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mi>i</mi><msup><mi>x</mi><mo mathvariant="normal">′</mo></msup></mrow></mrow><annotation encoding="application/x-tex">x = {ix^\prime}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.751892em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">i</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.751892em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span> 带入 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">e^x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span></span></span></span></span></span></span></span> 的展开，可得</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲e^{ix^\prime} &amp;…'>\begin{align}e^{ix^\prime} &amp; =1+{ix^\prime}+\frac{{(ix^\prime)}^2}{2!}+\frac{{(ix^\prime)}^3}{3!}+\frac{{(ix^\prime)}^4}{4!}+\cdot\cdot\cdot+\frac{{(ix^\prime)}^n}{n!}+\cdots\tag{19} \\
+
+e^{ix^\prime} &amp; =1+{ix^\prime}+\frac{i^2 {x^\prime}^2}{2!}+\frac{i^3 {x^\prime}^3}{3!}+\frac{i^4 {x^\prime}^4}{4!}+\cdot\cdot\cdot+\frac{i^n {x^\prime}^n}{n!}+\cdots\tag{20}\end{align}
+</p>
+<p>由于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><mo>−</mo><mn>1</mn><mo separator="true">,</mo><mtext> </mtext><msup><mi>i</mi><mn>3</mn></msup><mo>=</mo><mo>−</mo><mi>i</mi><mo separator="true">,</mo><mtext> </mtext><msup><mi>i</mi><mn>4</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i^{2}=-1,\:i^{3}=-i,\:i^{4}=1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">i</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.008548em;vertical-align:-0.19444em;"></span><span class="mord">−</span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">i</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.008548em;vertical-align:-0.19444em;"></span><span class="mord">−</span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">i</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲e^{ix^\prime} &amp;…'>\begin{align}e^{ix^\prime} &amp; =1+{ix^\prime}-\frac{{x^\prime}^2}{2!}-\frac{i{x^\prime}^3}{3!}+\frac{{x^\prime}^4}{4!}+\frac{i{x^\prime}^5}{5!}-\cdots\tag{21}\end{align}
+</p>
+<p>分离虚部和实部</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲e^{ix^\prime} &amp;…'>\begin{align}e^{ix^\prime} &amp; =(1-\frac{{x^\prime}^2}{2!}+\frac{{x^\prime}^4}{4!}-\cdots) +i(x^\prime-\frac{i{x^\prime}^3}{3!} +\frac{{x^\prime}^5}{5!}+\cdots)\tag{21}\end{align}
+</p>
+<p>将式 21 与 式 18进行对比，可得</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
+\sin x=x-\frac…'>\begin{align}
+\sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\cdots\tag{6}\\
+
+\cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\cdots\tag{7}
+\end{align}
+</p>
+<p>也就是式 6 与 式 7</p>
+<p>备注：</p>
+<blockquote>
+<p>我们在这里的操作有些”倒行逆施“，更严谨的做法应该是从泰勒级数推出欧拉公式，好在我们的目的严谨地推导公式，而是指出它们之间的联系，倒也无伤大雅。</p>
+</blockquote>
+<blockquote>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>tan</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\tan x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mop">tan</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span></span></span></span> 的展开虽然不常用，但偶尔需要用到其3阶的展开，利用高中所学的这样一个事实，当 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi><mo>∈</mo><mo>(</mo><mn>0</mn><mo separator="true">,</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>)</mo></mrow><annotation encoding="application/x-tex">x\in(0,\frac{\pi}{2})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.095em;vertical-align:-0.345em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.695392em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">π</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">)</span></span></span></span> 时，总有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mi>tan</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\sin x &lt; x &lt; \tan x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.70696em;vertical-align:-0.0391em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mop">tan</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span></span></span></span>，所以<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\sin x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66786em;vertical-align:0em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span></span></span></span> 必定相比于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 多了一个负的项，而 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>tan</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\tan x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mop">tan</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span></span></span></span> 则会多一个正的项，如此可以减轻一定记忆负担。</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
+\sin x&amp;\sim x+…'>\begin{align}
+\sin x&amp;\sim x+\frac{x^3}{6}\\
+
+\tan x&amp;\sim x-\frac{x^3}3\\
+
+\end{align}
+</p>
+<p>另外，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>arcsin</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\arcsin x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66786em;vertical-align:0em;"></span><span class="mop">arcsin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>arctan</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\arctan x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mop">arctan</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span></span></span></span> 的三阶展开也相当好记，几乎和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>sin</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\sin x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66786em;vertical-align:0em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>tan</mi><mo>⁡</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\tan x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mop">tan</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span></span></span></span> 一致，除了第二项符号相反。</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
+\arcsin x&amp;\sim…'>\begin{align}
+\arcsin x&amp;\sim x+\frac{x^3}{6}\\
+
+\arctan x&amp;\sim x-\frac{x^3}3\\
+
+\end{align}
+</p>
+<p>这里也给出它们的图像，便于读者有直观的感受<a href="https://imgse.com/i/pk9uGXq"><img src="https://s21.ax1x.com/2024/04/23/pk9uGXq.png" alt="pk9uGXq.png" loading="lazy"></a></p>
+</blockquote>
+<h2 id="第三组">第三组</h2>
+<h2 id="泰勒级数">泰勒级数</h2>
+<p>https://www.bilibili.com/video/BV1T4411v7iP?p=34&amp;vd_source=330790d6bd42e10acb11f2b559b4ad46</p>
+<p>32：55 处</p>
+<blockquote>
+<p>So why are we<br>
+looking at these series? Well the answer is we're looking at these series because the role that<br>
+they play is exactly the reverse of this equation here. That is -- and this is a theme which I<br>
+have tried to emphasize throughout this course -- you can read equalities in two directions.<br>
+Both are interesting, typically. You can think, I don't know what the value of this is. Here's a<br>
+way of evaluating. And in other words, the right side is a formula for the left side. Or you can<br>
+think of the left side as being a formula for the right side. And the idea of series is that they're<br>
+flexible enough to represent all of the functions that we've encountered in this course.<br>
+This is the tool which is very much like the decimal expansion which allows you to represent<br>
+numbers like the square root of 2. Now we're going to be representing all the numbers, all the<br>
+functions that we know: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">e^x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span></span></span></span></span></span></span></span>, arctangent, sine, cosine. All of those functions become<br>
+completely flexible, and completely available to us, and computationally available to us directly.<br>
+So that's what this is a tool for. And it's just like decimal expansions giving you handle on all<br>
+real numbers.<br>
+So here's how it works. The rules for convergent power series are just like polynomials. All of<br>
+the manipulations that you do for power series are essentially the same as for polynomials. So<br>
+what kinds of things do we do with polynomials? We add them. We multiply them together. We<br>
+do substitutions. Right? We take one function of another function. We divide them. OK. And<br>
+these are all really not very surprising operations. And we will be able to do them with power<br>
+series too. The ones that are interesting, really interesting for calculus, are the last two. We<br>
+differentiate them, and we integrate them. And all of these operations we'll be able to do for<br>
+power series as well.</p>
+</blockquote>
+<blockquote>
+<p>为什么我们要讨论这类级数？答案是我们讨论这些级数是因为它们所扮演的角色。反写这个等式，就是说，有一个主题，我在这堂课上想要强调、并贯穿的主题。你可以从两个方向来读这些等式，通常来说，两个方向都非常有意思。假如我不知道这个的值，这里就提供了一个方法来估算它的值，右边是左边的表达式。或者可以认为，左边是右边的表达式。这个关于级数的想法足够灵活来呈现，我们这节课遇到的所有函数。这是一个工具，很像十进制的展开工具，它可以表示像根号2之类的数字。这样就可以表示我们知道的所有数字和函数，比如： <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">e^x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">x</span></span></span></span></span></span></span></span></span></span></span>, arctan, sin, cos。所有这些函数都变得非常灵活和容易理解，并且可以直接计算。这就是这个工具（幂级数）的目的所在。这就像十进制展开，给出一个处理所有实数的方法，这就是它如何工作的。收敛幂级数的法则和多项式很像。对幂级数所做的所有操作和多项式是一样的。我们还对多项式做了什么？把它们加起来，把它们乘到一起，做复合函数，对吧？把一个函数带入另一个函数，相除，这些都是很常规操作。幂级数也有同样的计算，在微积分中，后两个才是真正有意思的。对它们求导，对它们做积分，所有的运行，对于幂级数来说都是成立的。</p>
+</blockquote>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E7%BB%84">第一组</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%BB%84">第二组</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E7%BB%84">第三组</a></li>
+<li><a href="#%E6%B3%B0%E5%8B%92%E7%BA%A7%E6%95%B0">泰勒级数</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://shadowater.github.io/post/rockhometown/">
+              <h3 class="post-title">
+                石家庄一日游
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://shadowater.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
